@@ -1,0 +1,30 @@
+name: medicare
+description: MediCare - Intelligent Pharmacy Management and Medicine Assistance System
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4       # stores bookings, prescriptions & reminders in Firebase
+  flutter_local_notifications: ^18.0.1 # native mobile notifications for booking & reminders
+  local_auth: ^2.3.0            # biometric (fingerprint / face)
+  flutter_secure_storage: ^9.2.2 # stores the "biometric enabled" flag securely
+  mongo_dart: ^0.10.10          # MongoDB Atlas & local database driver
+  http: ^1.2.2                  # HTTP client for REST backend API
+  image_picker: ^1.2.4
+  timezone: ^0.10.1
+  shared_preferences: ^2.5.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
